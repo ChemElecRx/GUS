@@ -82,4 +82,21 @@ ul, ol {
     height: 100%;
     width: 100%;
     position: absolute;
-  }  
+  } 
+  
+  .custom-navbar {
+    background-color: #333; /* dark background */
+  }
+  
+  .custom-navbar .nav-link {
+    color: #fff !important; /* white text */
+    margin: 0 10px;          /* spacing like original */
+  }
+  
+  .custom-navbar .nav-link:hover {
+    text-decoration: underline; /* optional effect */
+  }
+  
+  .navbar-toggler {
+    background-color: #fff; /* make burger icon visible on dark bg */
+  }

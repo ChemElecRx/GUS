@@ -100,3 +100,16 @@ ul, ol {
   .navbar-toggler {
     background-color: #fff; /* make burger icon visible on dark bg */
   }
+
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }

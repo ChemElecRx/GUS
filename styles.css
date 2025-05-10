@@ -1,115 +1,116 @@
+/* ========== Reset & Base ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #abb2b9;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  header .logo img {
-    width: 100px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .hero {
-    background-color: #f4f4f4;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  main {
-    padding-bottom: 100px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  footer {
-    background-color: #abb2b9;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-  }
+html, body {
+  height: 100%;
+}
 
-/* Indent bullets and numbers */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== Layout Containers ========== */
+main {
+  flex: 1;
+  padding-bottom: 100px;
+}
+
+section {
+  padding: 20px;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #abb2b9;
+  padding: 10px;
+  text-align: center;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+/* ========== Navigation ========== */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Custom navbar styling */
+.custom-navbar {
+  background-color: #abb2b9;
+}
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+}
+
+.custom-navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  background-color: #fff;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #abb2b9;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* ========== Lists ========== */
 ul, ol {
-    list-style-position: inside; /* Moves the bullet or number inside the padding area */
-    padding-left: 0; /* Reset default padding */
-  }
-  
-  /* Add additional indentation for list content */
-  ul li, ol li {
-    padding-left: 20px; /* Indent the content further */
-  }
+  list-style-position: inside;
+  padding-left: 0;
+}
 
-  .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
+ul li, ol li {
+  padding-left: 20px;
+}
 
-  .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  } 
-  
-  .custom-navbar {
-    background-color: #abb2b9; /* background */
-  }
-  
-  .custom-navbar .nav-link {
-    color: #fff !important; /* white text */
-    margin: 0 10px;          /* spacing like original */
-  }
-  
-  .custom-navbar .nav-link:hover {
-    text-decoration: underline; /* optional effect */
-  }
-  
-  .navbar-toggler {
-    background-color: #fff; /* make burger icon visible on dark bg */
-  }
+/* ========== Responsive Map ========== */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
 
-  html, body {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main {
-    flex: 1;
-  }
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
